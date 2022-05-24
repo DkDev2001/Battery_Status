@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.venzpire.batterystatus.databinding.ActivityBatteryStatusBinding;
 
-public class Battery_Status extends AppCompatActivity {
+public class BatteryStatus extends AppCompatActivity {
 
     ActivityBatteryStatusBinding batteryStatusBinding;
 

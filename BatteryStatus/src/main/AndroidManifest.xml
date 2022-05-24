@@ -4,7 +4,7 @@
 
     <application>
         <activity
-            android:name=".Battery_Status"
+            android:name=".BatteryStatus"
             android:exported="false" />
     </application>
 
