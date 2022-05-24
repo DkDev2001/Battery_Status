@@ -15,7 +15,7 @@ public class Battery_Status extends AppCompatActivity {
     ActivityBatteryStatusBinding batteryStatusBinding;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         batteryStatusBinding = ActivityBatteryStatusBinding.inflate(getLayoutInflater());
         setContentView(batteryStatusBinding.getRoot());
@@ -30,7 +30,7 @@ public class Battery_Status extends AppCompatActivity {
 
     }
 
-    private void setBatteryStatus(int percentage) {
+    public void setBatteryStatus(int percentage) {
 
         if (percentage >= 1 && percentage <= 20) {
             batteryStatusBinding.part1.setVisibility(View.INVISIBLE);
