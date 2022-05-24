@@ -8,16 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.venzpire.batterystatus.databinding.ActivityBatteryStatusBinding;
+import com.venzpire.batterystatus.databinding.ActivityMainBinding;
 
-public class BatteryStatus extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    ActivityBatteryStatusBinding batteryStatusBinding;
+    ActivityMainBinding batteryStatusBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        batteryStatusBinding = ActivityBatteryStatusBinding.inflate(getLayoutInflater());
+        batteryStatusBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(batteryStatusBinding.getRoot());
 
         batteryStatusBinding.save.setOnClickListener(v -> {
