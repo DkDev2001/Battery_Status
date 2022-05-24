@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.venzpire.batterystatus">
+
+    <application>
+        <activity
+            android:name=".Battery_Status"
+            android:exported="false" />
+    </application>
+
+</manifest>

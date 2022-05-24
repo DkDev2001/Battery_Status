@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Battery_Status">
+
+    <EditText
+        android:id="@+id/percentageEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_margin="@dimen/_16sdp"
+        android:hint="Enter Battery Percentage" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/_10sdp"
+        android:text="Submit"/>
+
+    <RelativeLayout
+        android:id="@+id/BatteryContainer"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/ic_battery_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/part1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:src="@drawable/battery_part" />
+
+            <ImageView
+                android:id="@+id/part2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:src="@drawable/battery_part" />
+
+            <ImageView
+                android:id="@+id/part3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:src="@drawable/battery_part" />
+
+            <ImageView
+                android:id="@+id/part4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:src="@drawable/battery_part" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
