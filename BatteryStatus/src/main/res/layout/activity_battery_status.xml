@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/BatteryContainer"
     android:orientation="vertical"
     tools:context=".Battery_Status">
 
@@ -24,7 +25,6 @@
         android:text="Submit"/>
 
     <RelativeLayout
-        android:id="@+id/BatteryContainer"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_200sdp"
         android:layout_gravity="center"
